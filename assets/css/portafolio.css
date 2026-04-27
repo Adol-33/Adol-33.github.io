@@ -94,7 +94,6 @@ html {
     --color-texto: #FFB30D;
     --color-bg-header: #202022;
     --color-bg-section: #CACACA;
-    
 }
 
 span {
@@ -120,9 +119,7 @@ body {
     "main"
     "footer";
     gap: 1rem;
-
     background-color: #fff;
-    
 }
 
 .redes {
@@ -160,12 +157,10 @@ h4 {
 
 .header {
     grid-area: header;
-
     border-bottom: 3px solid var(--color-texto);
     width: 100%;
     height: 5rem;
     padding: .5rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,16 +179,13 @@ h4 {
     text-align: center;
     font-size: 2rem;
     letter-spacing: 3px;
-
 }
 
 
 .main {
     grid-area: main;
-
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,38 +196,32 @@ h4 {
 .inicio {
     width: 100%;
     height: calc(90vh - 5rem);
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-
 }
 
 .div-inicio {
     width: 100%;
     height: 100%;
     padding: .5rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
-
 }
 
 .div-img {
-    width: 50%;
-    height: 70%;
-    align-self: self-start;
-    margin-left: 10rem;
+    width: 100%;
+    height: auto;
 }
 
 .div-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(20, 20, 22, 0.7);
 }
@@ -245,35 +231,33 @@ h4 {
     width: 100%;
     height: 60%;
     padding: 1rem;
-
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     gap: 1rem;
-
-
 }
 
 .div-inicio-texto h2 {
-    padding: 1rem;
-    letter-spacing: 2px;
-    text-align: justify;
-    font-size: 2.5rem;
-    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(20, 20, 22, 0.7);
+    border-radius: 10px;
+    font-size: 2.5rem;
+    height: auto;
+    letter-spacing: 2px;
+    padding: 1rem;
+    width: 100%;
 }
 
 .raya {width: 4rem; height: 5px; background-color: red;}
 
 .div-inicio-texto p {
-    width: 80%;
-
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-    padding: 1rem;
-    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(20, 20, 22, 0.7);
+    border-radius: 10px;
+    font-size: 2rem;
+    height: auto;
+    letter-spacing: 1px;
+    padding: 1rem;
+    width: 100%;
 }
 
 .div-habilidades {
@@ -284,7 +268,6 @@ h4 {
 .ul-habilidades {
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -292,29 +275,29 @@ h4 {
     gap: 1rem;
 }
 
-
-.div-stack {
-    width: 30rem;
-    height: 15rem;
-
+.ul-habilidades li {
+    width: 50em;
+    height: 40em;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
-    border-radius: 10px;
-    /* overflow: hidden; */
-
-    box-shadow: 0 2px 8px rgba(20, 20, 22, 0.7);
+    gap: .2rem;
 }
 
-.div-stack img {
-    min-width: 100%;
-    min-height: 100%;
+.ul-habilidades li img {
     object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
 
+.ul-habilidades li p {
+    width: 100%;
+    text-align: center;
 }
 
 .div-proyecto {
@@ -329,32 +312,6 @@ h4 {
     gap: .5rem;
 }
 
-.ul-proyecto {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-
-
-}
-
-.ul-proyecto li {
-    width: 70rem;
-    height: auto;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    gap: .5rem;
-
-}
 
 .div-li-proyecto {
     color: #fff;
@@ -389,15 +346,11 @@ h4 {
 }
 
 
-
-
-
 .footer {
     grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: 5rem;
     padding: .5rem;
@@ -414,7 +367,6 @@ h4 {
 
 .footer p {
     color: var(--color-texto);
-
 }
 
 .navbar {
@@ -424,18 +376,15 @@ h4 {
     justify-content: end;
     align-items: center;
     position: relative;
-
     padding: .5rem;
 }
 
 .navbar-menu {
     display: flex;
     gap: 1rem;
-    /* color: black; */
 }
 
 .navbar-menu li a {
-    border: 1px solid var(--color-bg-header);
     border-radius: 4px;
     padding: .5rem;
 }
@@ -449,14 +398,13 @@ h4 {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-left: 1rem;
 }
 
 /* Tres rayitas */
 .hamburguesa span {
     width: 25px;
     height: 3px;
-    background: #333;
+    background: var(--color-texto);
     margin: 4px 0;
     transition: 0.4s;
 }
@@ -487,6 +435,7 @@ h4 {
     font-weight: 500;
     color: #444;
 }
+
 .form-group input,
 .form-group textarea {
     padding: 8px 10px;
@@ -495,11 +444,13 @@ h4 {
     font-size: 1rem;
     transition: border 0.2s;
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
     border: 1.5px solid #007bff;
     outline: none;
 }
+
 .form-contacto button {
     padding: 10px 0;
     background: #007bff;
@@ -511,21 +462,20 @@ h4 {
     cursor: pointer;
     transition: background 0.2s;
 }
+
 .form-contacto button:hover {
     background: #0056b3;
 }
 
-@media (max-width: 700px) {
-    .contacto {
-        max-width: 98vw;
-        padding: 16px 4px;
-    }
-}
 
 
+/* MEDIA QUERY ------------------------------------------- */
+@media (max-width: 1024px) {
 
-@media (max-width: 992px) {
+    html{width: 100%; height: 100%;}
+
     .inicio {
+        height: 100%;
         gap: .5rem;
     }
 
@@ -570,46 +520,99 @@ h4 {
 }
 
 @media (max-width: 870px) {
+    html{width: 100%;height: 100%;}
     .h1-header {font-size: 1.5rem; text-align: start;}
     .navbar {width: 30%;}
     .navbar-menu {font-size: 1rem;}
 }
 
+@media (max-width: 768px) {
+    html{width: 100%;height: 100%;}
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .inicio {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
 @media (max-width: 576px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     body {
         width: 100%;
-        grid-template-columns: 1fr;
-
-
+        gap: 2rem;
+        background-color: #CACACA;
     }
 
-    .div-header {
+    .inicio {
+        width: 100%;
+        height: 100%;
+    }
+
+    .habilidades {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .ul-habilidades {
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        gap: .5rem;
+    }
+
+    .ul-habilidades li {
+        width: 20rem;
+        height: auto;
+        align-self: center;
+    }
+
+    .div-inicio-texto {
         width: 100%;
     }
 
-    .navbar {
-        width: 30%;
+
+    .header {
+        width: 100%;
     }
 
-    .h1-header {
-        font-size: 1.5rem;
-        width: 90%;
+    .main {
+        width: 100%;
+        height: 100%;
     }
 
+    .footer {
+        width: 100%;
+    }
+
+/* menu ----------------------------------- */
     .navbar-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 0;
-        width: 120px;
+        width: 140px;
+        color: white;
         background: rgba(20, 20, 22, 0.5);
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         padding: .5rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         border-radius: 5px;
-        
     }
+
     .navbar-menu.active {
         display: flex;
     }
@@ -617,47 +620,8 @@ h4 {
         display: flex;
     }
 
-    .main {
-        gap: .5rem;
-        margin-top: 0;
-    }
-
-    .inicio {
-        gap: .5rem;
-    }
-    
-    .div-img {
-        width: 15rem;
-        height: 20rem;
-        align-self: center;
-    }
-
-    .div-inicio {
-        flex-direction: column;
-        padding: .2rem;
-        gap: .5rem;
-    }
-
-
-    .div-inicio-texto {
-        align-items: center;
-        justify-content: start;
-        gap: .5rem;
-        padding: .2rem;
-        height: 8rem;
-    }
-
-    .div-inicio-texto h2 {
-        font-size: 1rem;
-        pad: .2rem;
-    }
-
-    .raya{display: none;}
-
-    .div-inicio p {
-        font-size: 1rem;
-        padding: .2rem;
-        width: 100%;
+    .navbar-menu li a:hover {
+    border: none;
     }
 
 }
