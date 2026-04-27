@@ -128,7 +128,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
 }
 
 
@@ -140,7 +140,7 @@ h4 {
     width: 100%;
     height: auto;
     background: none;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.2em;
     background-color: var(--color-bg-header);
 }
 
@@ -164,14 +164,14 @@ h4 {
     grid-area: header;
     height: 5rem;
     justify-content: space-between;
-    padding: .5rem;
+    padding: .5em;
     width: 100%;
 }
 
 .div-header {
     width: 100%;
     height: 100%;
-    padding: .5rem;
+    padding: .5em;
 }
 
 .h1-header {
@@ -190,7 +190,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1em;
 }
 
 .inicio {
@@ -205,21 +205,21 @@ h4 {
 .div-inicio {
     width: 100%;
     height: 100%;
-    padding: .5rem;
+    padding: .5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 4em;
 }
 
 .div-img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .div-img img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center center;
     border-radius: 10px;
@@ -229,13 +229,13 @@ h4 {
 .div-inicio-texto {
     position: relative;
     width: 100%;
-    height: 60%;
-    padding: 1rem;
+    height: auto;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    gap: 1rem;
+    gap: 1em;
 }
 
 .div-inicio-texto h2 {
@@ -244,11 +244,11 @@ h4 {
     font-size: 2.5rem;
     height: auto;
     letter-spacing: 2px;
-    padding: 1rem;
+    padding: 1em;
     width: 100%;
 }
 
-.raya {width: 4rem; height: 5px; background-color: red;}
+.raya {width: 6rem; height: .5rem; background-color: red;}
 
 .div-inicio-texto p {
     box-shadow: 0 2px 8px rgba(20, 20, 22, 0.7);
@@ -272,27 +272,27 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1em;
 }
 
 .ul-habilidades li {
     width: 50em;
     height: 40em;
-    padding: 10px;
+    padding: 1em;
     border-radius: 10px;
     box-shadow: 0 2px 8px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .2rem;
+    gap: .2em;
 }
 
 .ul-habilidades li img {
     object-fit: cover;
     object-position: center center;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .ul-habilidades li p {
@@ -303,13 +303,13 @@ h4 {
 .div-proyecto {
     width: 100%;
     height: 100%;
-    padding: .5rem;
+    padding: .5em;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5rem;
-    gap: .5rem;
+    padding: .5em;
+    gap: .5em;
 }
 
 
@@ -318,14 +318,14 @@ h4 {
     background-color: #59707E;
     width: 100%;
     letter-spacing: 2px;
-    padding: .5rem;
+    padding: .5em;
     border-radius: 5px;
 }
 
 
 .ul-proyecto h5 {
     font-weight: 800;
-    padding: .2rem;
+    padding: .2em;
     /* border: 1px solid black; */
     text-align: justify;
 
@@ -338,8 +338,8 @@ h4 {
 }
 
 .ul-proyecto img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
     object-position: center center;
     border-radius: 10px;
@@ -353,7 +353,7 @@ h4 {
     align-items: center;
     width: 100%;
     height: 5rem;
-    padding: .5rem;
+    padding: .5em;
     background-color: var(--color-bg-header);
 }
 
@@ -370,23 +370,24 @@ h4 {
 }
 
 .navbar {
+    font-size: 1.2em;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
     position: relative;
-    padding: .5rem;
+    padding: .5em;
 }
 
 .navbar-menu {
     display: flex;
-    gap: 1rem;
+    gap: 1em;
 }
 
 .navbar-menu li a {
     border-radius: 4px;
-    padding: .5rem;
+    padding: .5em;
 }
 
 .navbar-menu li a:hover {
@@ -424,12 +425,12 @@ h4 {
 .form-contacto {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1em;
 }
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: .5em;
 }
 .form-group label {
     font-weight: 500;
@@ -452,7 +453,7 @@ h4 {
 }
 
 .form-contacto button {
-    padding: 10px 0;
+    padding: .6em 0;
     background: #007bff;
     color: #fff;
     border: none;
@@ -475,7 +476,7 @@ h4 {
 
 
 
-@media (min-width: 1300px) {
+@media (max-width: 1200px) {
     .inicio {
         width: 100%;
     }
@@ -489,13 +490,13 @@ h4 {
 
     .inicio {
         height: 100%;
-        gap: .5rem;
+        gap: .5em;
     }
 
     .div-inicio {
         flex-direction: column;
-        padding: .2rem;
-        gap: .5rem;
+        padding: .2em;
+        gap: .5em;
     }
 
     .div-img {
@@ -508,38 +509,41 @@ h4 {
     .div-inicio-texto {
         align-items: center;
         justify-content: center;
-        gap: .5rem;
-        padding: .2rem;
+        gap: .5em;
+        padding: .2em;
     }
 
     .div-inicio-texto h2 {
         font-size: 1rem;
-        pad: .2rem;
+        pad: .2em;
     }
 
     .div-inicio-texto h2 {
         font-size: 1rem;
-        pad: .2rem;
+        pad: .2em;
     }
 
     .raya{display: none;}
 
     .div-inicio p {
         font-size: 1rem;
-        padding: .2rem;
+        padding: .2em;
         width: 100%;
     }
 
 }
 
 @media (max-width: 870px) {
+
     html{width: 100%;height: 100%;}
+
     .h1-header {font-size: 1.5rem; text-align: start;}
     .navbar {width: 30%;}
     .navbar-menu {font-size: 1rem;}
 }
 
 @media (max-width: 768px) {
+
     html{width: 100%;height: 100%;}
 
     * {
@@ -564,7 +568,7 @@ h4 {
 
     body {
         width: 100%;
-        gap: 2rem;
+        gap: 2em;
     }
 
     .inicio {
@@ -574,7 +578,7 @@ h4 {
 
     .habilidades {
         width: 100%;
-        gap: .5rem;
+        gap: .5em;
     }
 
     .ul-habilidades {
@@ -582,7 +586,7 @@ h4 {
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
-        gap: .5rem;
+        gap: .5em;
     }
 
     .ul-habilidades li {
